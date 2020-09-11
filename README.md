@@ -1,9 +1,7 @@
-### Dockerized PHP5.6
-
-![Logo](./assets/logo.jpg)          
+## Dockerized PHP 5.6
 
 ### Status
-<img alt="Image Size" src="https://img.shields.io/docker/image-size/eduardevops/php5.6" style="max-width:100%;"> <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/eduardevops/php5.6" style="max-width:100%;"> <img alt="Build Status" src="https://img.shields.io/docker/cloud/build/eduardevops/php5.6" style="max-width:100%;"> <img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;">
+<img alt="Image Size" src="https://img.shields.io/docker/image-size/salalex/php5.6" style="max-width:100%;"> <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/salalex/php5.6" style="max-width:100%;"> <img alt="Build Status" src="https://img.shields.io/docker/cloud/build/salalex/php5.6?logo=docker" style="max-width:100%;"> <img alt="Licenses" src="https://img.shields.io/badge/License-GPLv3-blue.svg" style="max-width:100%;">
 
 ### Table of contents
 * [Prerequisites](#Prerequisites)
@@ -12,6 +10,7 @@
 * [Config Folder](#Config-Folder)
 * [Rename](#Rename)
 * [Deployment](#Deployment)
+* [Credits](#Credits)
 
 For PHP5.6-FPM with Nginx use ![Dockerized PHP5.6-FPM with Nginx](https://github.com/eduardevops/dockerized-php5.6-fpm)
 
@@ -53,18 +52,23 @@ For PHP5.6-FPM with Nginx use ![Dockerized PHP5.6-FPM with Nginx](https://github
 ### Rename
 It is highy advised to change all names.
 
------
-
 ### Deployment
-Clone repo to your server. I suggest using ```/opt``` directory
+Clone repo to your server.
 ```less
-sudo git clone https://github.com/eduardevops/dockerized-php5.6.git
+sudo git clone https://github.com/<this-repo>.git
 ```
 
-Put your webapp/website into the ```web``` folder. <br>
+Put your website files (e.g. html, php, ..) into the ```web``` subfolder.
+
 Navigate to the project folder and start containers.
 
 ```less
-cd /path/to/dockerized-php5.6
+cd /path/to/project/folder
 docker-compose up -d
 ```
+
+----
+
+### Credits
+The contents of this repository are based on following original sources:
+- [github.com/eduardevops/dockerized-php5.6](https://github.com/eduardevops/dockerized-php5.6)
